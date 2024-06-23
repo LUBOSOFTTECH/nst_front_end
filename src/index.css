@@ -184,9 +184,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
   /* for vertical scroll */
-  height: 12px;
+  height: 10px;
   /* for horizontal scroll */
 }
 
