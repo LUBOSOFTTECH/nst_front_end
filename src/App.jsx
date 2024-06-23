@@ -23,19 +23,45 @@ import {
   IoStarOutline,
   IoTicketOutline,
 } from "react-icons/io5";
+import { useState } from "react";
 
 function App() {
+  const [isClosed, setIsClosed] = useState("");
+  const [isMenuActive, setIsMenuActive] = useState("");
+  function closeModal() {
+    setIsClosed("closed");
+  }
+  function openModal() {
+    setIsClosed("");
+    setIsMenuActive("active");
+  }
+  function closeMenu() {
+    setIsMenuActive("");
+  }
+
   return (
     <div>
-      {/* <div className='overlay' data-overlay></div>
-      <div className='modal' data-modal>
-        <div className='modal-close-overlay' data-modal-overlay></div>
+      <div
+        className={`overlay ${isMenuActive}`}
+        data-overlay
+        onClick={closeMenu}
+      ></div>
+      <div className={`modal ${isClosed}`} data-modal>
+        <div
+          className='modal-close-overlay'
+          onClick={closeModal}
+          data-modal-overlay
+        ></div>
         <div className='modal-content'>
-          <button className='modal-close-btn' data-modal-close>
+          <button
+            className='modal-close-btn'
+            onClick={closeModal}
+            data-modal-close
+          >
             <AiOutlineClose />
           </button>
         </div>
-      </div> */}
+      </div>
       <header>
         <div className='header-top'>
           <div className='container'>
@@ -207,7 +233,11 @@ function App() {
           </div>
         </nav>
         <div className='mobile-bottom-navigation'>
-          <button className='action-btn' data-mobile-menu-open-btn>
+          <button
+            className='action-btn'
+            onClick={openModal}
+            data-mobile-menu-open-btn
+          >
             <IoMenuOutline />
           </button>
           <button className='action-btn'>
@@ -222,10 +252,17 @@ function App() {
             <span className='count'>0</span>
           </button>
         </div>
-        <nav className='mobile-navigation-menu has-scrollbar' data-mobile-menu>
+        <nav
+          className={`mobile-navigation-menu has-scrollbar ${isMenuActive}`}
+          data-mobile-menu
+        >
           <div className='menu-top'>
             <h2 className='menu-title'>Menu</h2>
-            <button className='menu-close-btn' data-mobile-menu-close-btn>
+            <button
+              className='menu-close-btn'
+              onClick={closeMenu}
+              data-mobile-menu-close-btn
+            >
               <AiOutlineClose />
             </button>
           </div>
