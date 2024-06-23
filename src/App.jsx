@@ -7,6 +7,11 @@ import LandingPage from "./LandingPage";
 import CustomerLayout from "./CustomerLayout";
 import AdminLayout from "./AdminLayout";
 import AdminDashboard from "./AdminDashboard";
+import AdminCategories from "./AdminCategories";
+import AdminVariants from "./AdminVariants";
+import AdminProducts from "./AdminProducts";
+import AdminShippingDetails from "./AdminShippingDetails";
+import AdminSettings from "./AdminSettings";
 
 function App() {
   const router = createBrowserRouter([
@@ -41,23 +46,23 @@ function App() {
           path: "/admin/dashboard",
         },
         {
-          element: <div>Categories</div>,
+          element: <AdminCategories />,
           path: "/admin/categories",
         },
         {
-          element: <div>Varients</div>,
-          path: "/admin/varients",
+          element: <AdminVariants />,
+          path: "/admin/variants",
         },
         {
-          element: <div>product</div>,
-          path: "/admin/product",
+          element: <AdminProducts />,
+          path: "/admin/products",
         },
         {
-          element: <div>shipping</div>,
-          path: "/admin/shipping",
+          element: <AdminShippingDetails />,
+          path: "/admin/shipping-details",
         },
         {
-          element: <div>settings</div>,
+          element: <AdminSettings />,
           path: "/admin/settings",
         },
       ],
