@@ -4,7 +4,7 @@ import CustomerFooter from "./CustomerFooter";
 
 function CustomerViewLayout() {
   return (
-    <div>
+    <div className='body-content'>
       <CustomerHeader />
       <Outlet />
       <CustomerFooter />

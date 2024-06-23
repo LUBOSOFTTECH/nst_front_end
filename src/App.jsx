@@ -6,6 +6,7 @@ import {
 import LandingPage from "./LandingPage";
 import CustomerLayout from "./CustomerLayout";
 import AdminLayout from "./AdminLayout";
+import AdminDashboard from "./AdminDashboard";
 
 function App() {
   const router = createBrowserRouter([
@@ -36,7 +37,7 @@ function App() {
       element: <AdminLayout />,
       children: [
         {
-          element: <div>Dashboard</div>,
+          element: <AdminDashboard />,
           path: "/admin/dashboard",
         },
         {

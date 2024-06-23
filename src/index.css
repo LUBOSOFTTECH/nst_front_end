@@ -143,6 +143,9 @@ input::placeholder {
 
 body {
   background: rgb(255, 255, 255);
+}
+
+.body-content {
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 54%, rgba(20, 20, 20, 1) 100%);
 }
 
