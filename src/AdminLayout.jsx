@@ -54,7 +54,7 @@ function AdminViewLayout() {
             </li>
           </ul>
         </div>
-        <main className='p-8'>
+        <main className='p-8 grow'>
           <Outlet />
         </main>
       </div>
