@@ -27,7 +27,7 @@ import {
 function App() {
   return (
     <div>
-      <div className='overlay' data-overlay></div>
+      {/* <div className='overlay' data-overlay></div>
       <div className='modal' data-modal>
         <div className='modal-close-overlay' data-modal-overlay></div>
         <div className='modal-content'>
@@ -35,7 +35,7 @@ function App() {
             <AiOutlineClose />
           </button>
         </div>
-      </div>
+      </div> */}
       <header>
         <div className='header-top'>
           <div className='container'>
