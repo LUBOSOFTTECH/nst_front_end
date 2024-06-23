@@ -1,3 +1,29 @@
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+import { GoSearch } from "react-icons/go";
+import {
+  IoAdd,
+  IoArrowUndoOutline,
+  IoBagAddOutline,
+  IoBagHandleOutline,
+  IoBoatOutline,
+  IoCallOutline,
+  IoCaretBack,
+  IoEyeOutline,
+  IoHeartOutline,
+  IoHomeOutline,
+  IoLocationOutline,
+  IoMailOutline,
+  IoMenuOutline,
+  IoPersonOutline,
+  IoRemove,
+  IoRepeat,
+  IoRocketOutline,
+  IoStar,
+  IoStarOutline,
+  IoTicketOutline,
+} from "react-icons/io5";
+
 function App() {
   return (
     <div>
@@ -6,13 +32,13 @@ function App() {
         <div className='modal-close-overlay' data-modal-overlay></div>
         <div className='modal-content'>
           <button className='modal-close-btn' data-modal-close>
-            <ion-icon name='close-outline'></ion-icon>
+            <AiOutlineClose />
           </button>
         </div>
       </div>
-      <div className='notification-toast' data-toast>
+      {/* <div className='notification-toast' data-toast>
         <button className='toast-close-btn' data-toast-close>
-          <ion-icon name='close-outline'></ion-icon>
+          <AiOutlineClose />
         </button>
         <div className='toast-banner'>
           <img
@@ -29,29 +55,29 @@ function App() {
             <time dateTime='PT2M'>2 Minutes</time> ago
           </p>
         </div>
-      </div>
+      </div> */}
       <header>
         <div className='header-top'>
           <div className='container'>
             <ul className='header-social-container'>
               <li>
                 <a href='#' className='social-link'>
-                  <ion-icon name='logo-facebook'></ion-icon>
+                  <FaFacebook />
                 </a>
               </li>
               <li>
                 <a href='#' className='social-link'>
-                  <ion-icon name='logo-twitter'></ion-icon>
+                  <FaTwitter />
                 </a>
               </li>
               <li>
                 <a href='#' className='social-link'>
-                  <ion-icon name='logo-instagram'></ion-icon>
+                  <FaInstagram />
                 </a>
               </li>
               <li>
                 <a href='#' className='social-link'>
-                  <ion-icon name='logo-linkedin'></ion-icon>
+                  <FaLinkedin />
                 </a>
               </li>
             </ul>
@@ -92,19 +118,19 @@ function App() {
                 placeholder='Enter your product name...'
               />
               <button className='search-btn'>
-                <ion-icon name='search-outline'></ion-icon>
+                <GoSearch />
               </button>
             </div>
             <div className='header-user-actions'>
               <button className='action-btn'>
-                <ion-icon name='person-outline'></ion-icon>
+                <IoPersonOutline />
               </button>
               <button className='action-btn'>
-                <ion-icon name='heart-outline'></ion-icon>
+                <IoHeartOutline />
                 <span className='count'>0</span>
               </button>
               <button className='action-btn'>
-                <ion-icon name='bag-handle-outline'></ion-icon>
+                <IoBagHandleOutline />
                 <span className='count'>0</span>
               </button>
             </div>
@@ -202,28 +228,25 @@ function App() {
         </nav>
         <div className='mobile-bottom-navigation'>
           <button className='action-btn' data-mobile-menu-open-btn>
-            <ion-icon name='menu-outline'></ion-icon>
+            <IoMenuOutline />
           </button>
           <button className='action-btn'>
-            <ion-icon name='bag-handle-outline'></ion-icon>
+            <IoBagHandleOutline />
             <span className='count'>0</span>
           </button>
           <button className='action-btn'>
-            <ion-icon name='home-outline'></ion-icon>
+            <IoHomeOutline />
           </button>
           <button className='action-btn'>
-            <ion-icon name='heart-outline'></ion-icon>
+            <IoHeartOutline />
             <span className='count'>0</span>
-          </button>
-          <button className='action-btn' data-mobile-menu-open-btn>
-            <ion-icon name='grid-outline'></ion-icon>
           </button>
         </div>
         <nav className='mobile-navigation-menu has-scrollbar' data-mobile-menu>
           <div className='menu-top'>
             <h2 className='menu-title'>Menu</h2>
             <button className='menu-close-btn' data-mobile-menu-close-btn>
-              <ion-icon name='close-outline'></ion-icon>
+              <AiOutlineClose />
             </button>
           </div>
           <ul className='mobile-menu-category-list'>
@@ -236,11 +259,8 @@ function App() {
               <button className='accordion-menu' data-accordion-btn>
                 <p className='menu-title'>ANTIQUE IDOL</p>
                 <div>
-                  <ion-icon name='add-outline' className='add-icon'></ion-icon>
-                  <ion-icon
-                    name='remove-outline'
-                    className='remove-icon'
-                  ></ion-icon>
+                  <IoAdd />
+                  <IoRemove />
                 </div>
               </button>
               <ul className='submenu-category-list' data-accordion>
@@ -260,11 +280,8 @@ function App() {
               <button className='accordion-menu' data-accordion-btn>
                 <p className='menu-title'>BOWLS</p>
                 <div>
-                  <ion-icon name='add-outline' className='add-icon'></ion-icon>
-                  <ion-icon
-                    name='remove-outline'
-                    className='remove-icon'
-                  ></ion-icon>
+                  <IoAdd />
+                  <IoRemove />
                 </div>
               </button>
               <ul className='submenu-category-list' data-accordion>
@@ -284,11 +301,8 @@ function App() {
               <button className='accordion-menu' data-accordion-btn>
                 <p className='menu-title'>PLATES</p>
                 <div>
-                  <ion-icon name='add-outline' className='add-icon'></ion-icon>
-                  <ion-icon
-                    name='remove-outline'
-                    className='remove-icon'
-                  ></ion-icon>
+                  <IoAdd />
+                  <IoRemove />
                 </div>
               </button>
               <ul className='submenu-category-list' data-accordion>
@@ -308,11 +322,8 @@ function App() {
               <button className='accordion-menu' data-accordion-btn>
                 <p className='menu-title'>POOJA SET</p>
                 <div>
-                  <ion-icon name='add-outline' className='add-icon'></ion-icon>
-                  <ion-icon
-                    name='remove-outline'
-                    className='remove-icon'
-                  ></ion-icon>
+                  <IoAdd />
+                  <IoRemove />
                 </div>
               </button>
               <ul className='submenu-category-list' data-accordion>
@@ -332,11 +343,8 @@ function App() {
               <button className='accordion-menu' data-accordion-btn>
                 <p className='menu-title'>WATCHES</p>
                 <div>
-                  <ion-icon name='add-outline' className='add-icon'></ion-icon>
-                  <ion-icon
-                    name='remove-outline'
-                    className='remove-icon'
-                  ></ion-icon>
+                  <IoAdd />
+                  <IoRemove />
                 </div>
               </button>
               <ul className='submenu-category-list' data-accordion>
@@ -363,10 +371,7 @@ function App() {
               <li className='menu-category'>
                 <button className='accordion-menu' data-accordion-btn>
                   <p className='menu-title'>Country</p>
-                  <ion-icon
-                    name='caret-back-outline'
-                    className='caret-back'
-                  ></ion-icon>
+                  <IoCaretBack />
                 </button>
                 <ul className='submenu-category-list' data-accordion>
                   <li className='submenu-category'>
@@ -389,10 +394,7 @@ function App() {
               <li className='menu-category'>
                 <button className='accordion-menu' data-accordion-btn>
                   <p className='menu-title'>Currency</p>
-                  <ion-icon
-                    name='caret-back-outline'
-                    className='caret-back'
-                  ></ion-icon>
+                  <IoCaretBack />
                 </button>
                 <ul className='submenu-category-list' data-accordion>
                   <li className='submenu-category'>
@@ -419,22 +421,22 @@ function App() {
             <ul className='menu-social-container'>
               <li>
                 <a href='#' className='social-link'>
-                  <ion-icon name='logo-facebook'></ion-icon>
+                  <FaFacebook />
                 </a>
               </li>
               <li>
                 <a href='#' className='social-link'>
-                  <ion-icon name='logo-twitter'></ion-icon>
+                  <FaTwitter />
                 </a>
               </li>
               <li>
                 <a href='#' className='social-link'>
-                  <ion-icon name='logo-instagram'></ion-icon>
+                  <FaInstagram />
                 </a>
               </li>
               <li>
                 <a href='#' className='social-link'>
-                  <ion-icon name='logo-linkedin'></ion-icon>
+                  <FaLinkedin />
                 </a>
               </li>
             </ul>
@@ -666,11 +668,11 @@ function App() {
                           ...
                         </p>
                         <div className='showcase-rating'>
-                          <ion-icon name='star'></ion-icon>
-                          <ion-icon name='star'></ion-icon>
-                          <ion-icon name='star'></ion-icon>
-                          <ion-icon name='star-outline'></ion-icon>
-                          <ion-icon name='star-outline'></ion-icon>
+                          <IoStar />
+                          <IoStar />
+                          <IoStar />
+                          <IoStarOutline />
+                          <IoStarOutline />
                         </div>
                         <div className='price-box'>
                           <p className='price'>$150.00</p>
@@ -701,11 +703,11 @@ function App() {
                           ...
                         </p>
                         <div className='showcase-rating'>
-                          <ion-icon name='star'></ion-icon>
-                          <ion-icon name='star'></ion-icon>
-                          <ion-icon name='star'></ion-icon>
-                          <ion-icon name='star-outline'></ion-icon>
-                          <ion-icon name='star-outline'></ion-icon>
+                          <IoStar />
+                          <IoStar />
+                          <IoStar />
+                          <IoStarOutline />
+                          <IoStarOutline />
                         </div>
                         <div className='price-box'>
                           <p className='price'>$1990.00</p>
@@ -736,16 +738,16 @@ function App() {
                       <p className='showcase-badge'>15%</p>
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -757,11 +759,11 @@ function App() {
                         ANTIQUE IDOL
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStarOutline />
+                        <IoStarOutline />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$48.00</p>
@@ -786,16 +788,16 @@ function App() {
                       <p className='showcase-badge angle black'>sale</p>
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -809,11 +811,11 @@ function App() {
                         BOWL
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStarOutline />
+                        <IoStarOutline />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$45.00</p>
@@ -837,16 +839,16 @@ function App() {
                       />
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -860,11 +862,11 @@ function App() {
                         PLATES
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStarOutline />
+                        <IoStarOutline />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$58.00</p>
@@ -889,16 +891,16 @@ function App() {
                       <p className='showcase-badge angle pink'>new</p>
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -912,11 +914,11 @@ function App() {
                         POOJA SET
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$25.00</p>
@@ -940,16 +942,16 @@ function App() {
                       />
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -963,11 +965,11 @@ function App() {
                         WATCHES
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$99.00</p>
@@ -992,16 +994,16 @@ function App() {
                       <p className='showcase-badge angle black'>sale</p>
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -1015,11 +1017,11 @@ function App() {
                         ANTIQUE IDOL
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStarOutline />
+                        <IoStarOutline />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$150.00</p>
@@ -1043,16 +1045,16 @@ function App() {
                       />
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -1066,11 +1068,11 @@ function App() {
                         BOWL
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStarOutline />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$100.00</p>
@@ -1095,16 +1097,16 @@ function App() {
                       <p className='showcase-badge angle black'>sale</p>
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -1118,11 +1120,11 @@ function App() {
                         PLATES
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStarOutline />
+                        <IoStarOutline />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$25.00</p>
@@ -1146,16 +1148,16 @@ function App() {
                       />
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -1169,11 +1171,11 @@ function App() {
                         POOJA SET
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStarOutline />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$32.00</p>
@@ -1198,16 +1200,16 @@ function App() {
                       <p className='showcase-badge angle black'>sale</p>
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -1221,11 +1223,11 @@ function App() {
                         WATCHES
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStarOutline />
+                        <IoStarOutline />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$58.00</p>
@@ -1249,16 +1251,16 @@ function App() {
                       />
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -1272,11 +1274,11 @@ function App() {
                         ANTIQUE IDOL
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStarOutline />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$50.00</p>
@@ -1301,16 +1303,16 @@ function App() {
                       <p className='showcase-badge angle black'>sale</p>
                       <div className='showcase-actions'>
                         <button className='btn-action'>
-                          <ion-icon name='heart-outline'></ion-icon>
+                          <IoHeartOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='eye-outline'></ion-icon>
+                          <IoEyeOutline />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='repeat-outline'></ion-icon>
+                          <IoRepeat />
                         </button>
                         <button className='btn-action'>
-                          <ion-icon name='bag-add-outline'></ion-icon>
+                          <IoBagAddOutline />
                         </button>
                       </div>
                     </div>
@@ -1324,11 +1326,11 @@ function App() {
                         BOWL
                       </a>
                       <div className='showcase-rating'>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
-                        <ion-icon name='star-outline'></ion-icon>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStarOutline />
+                        <IoStarOutline />
                       </div>
                       <div className='price-box'>
                         <p className='price'>$78.00</p>
@@ -1384,7 +1386,7 @@ function App() {
                 <div className='service-container'>
                   <a href='#' className='service-item'>
                     <div className='service-icon'>
-                      <ion-icon name='boat-outline'></ion-icon>
+                      <IoBoatOutline />
                     </div>
                     <div className='service-content'>
                       <h3 className='service-title'>Worldwide Delivery</h3>
@@ -1393,7 +1395,7 @@ function App() {
                   </a>
                   <a href='#' className='service-item'>
                     <div className='service-icon'>
-                      <ion-icon name='rocket-outline'></ion-icon>
+                      <IoRocketOutline />
                     </div>
                     <div className='service-content'>
                       <h3 className='service-title'>Next Day delivery</h3>
@@ -1402,7 +1404,7 @@ function App() {
                   </a>
                   <a href='#' className='service-item'>
                     <div className='service-icon'>
-                      <ion-icon name='call-outline'></ion-icon>
+                      <IoCallOutline />
                     </div>
                     <div className='service-content'>
                       <h3 className='service-title'>Best Online Support</h3>
@@ -1411,7 +1413,7 @@ function App() {
                   </a>
                   <a href='#' className='service-item'>
                     <div className='service-icon'>
-                      <ion-icon name='arrow-undo-outline'></ion-icon>
+                      <IoArrowUndoOutline />
                     </div>
                     <div className='service-content'>
                       <h3 className='service-title'>Return Policy</h3>
@@ -1420,7 +1422,7 @@ function App() {
                   </a>
                   <a href='#' className='service-item'>
                     <div className='service-icon'>
-                      <ion-icon name='ticket-outline'></ion-icon>
+                      <IoTicketOutline />
                     </div>
                     <div className='service-content'>
                       <h3 className='service-title'>30% money back</h3>
@@ -1561,7 +1563,7 @@ function App() {
               </li>
               <li className='flex footer-nav-item'>
                 <div className='icon-box'>
-                  <ion-icon name='location-outline'></ion-icon>
+                  <IoLocationOutline />
                 </div>
                 <address className='content'>
                   419 State 414 Rte Beaver Dams, New York(NY), 14812, USA
@@ -1569,7 +1571,7 @@ function App() {
               </li>
               <li className='flex footer-nav-item'>
                 <div className='icon-box'>
-                  <ion-icon name='call-outline'></ion-icon>
+                  <IoCallOutline />
                 </div>
                 <a href='tel:+607936-8058' className='footer-nav-link'>
                   (607) 936-8058
@@ -1577,7 +1579,7 @@ function App() {
               </li>
               <li className='flex footer-nav-item'>
                 <div className='icon-box'>
-                  <ion-icon name='mail-outline'></ion-icon>
+                  <IoMailOutline />
                 </div>
                 <a href='mailto:example@gmail.com' className='footer-nav-link'>
                   example@gmail.com
@@ -1592,22 +1594,22 @@ function App() {
                 <ul className='social-link'>
                   <li className='footer-nav-item'>
                     <a href='#' className='footer-nav-link'>
-                      <ion-icon name='logo-facebook'></ion-icon>
+                      <FaFacebook />
                     </a>
                   </li>
                   <li className='footer-nav-item'>
                     <a href='#' className='footer-nav-link'>
-                      <ion-icon name='logo-twitter'></ion-icon>
+                      <FaTwitter />
                     </a>
                   </li>
                   <li className='footer-nav-item'>
                     <a href='#' className='footer-nav-link'>
-                      <ion-icon name='logo-linkedin'></ion-icon>
+                      <FaLinkedin />
                     </a>
                   </li>
                   <li className='footer-nav-item'>
                     <a href='#' className='footer-nav-link'>
-                      <ion-icon name='logo-instagram'></ion-icon>
+                      <FaInstagram />
                     </a>
                   </li>
                 </ul>
