@@ -54,7 +54,7 @@ function AdminViewLayout() {
             </li>
           </ul>
         </div>
-        <main className='p-8 grow'>
+        <main className='p-8 overflow-scroll grow'>
           <Outlet />
         </main>
       </div>
