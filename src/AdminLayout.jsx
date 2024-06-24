@@ -43,7 +43,7 @@ function AdminViewLayout() {
               </Link>
             </li>
           </ul>
-          <ul className='mb-5'>
+          <ul className='mb-5 font-medium'>
             <li className='border border-b-0 border-l-0 border-r-0 '>
               <Link className='p-3' to={"/admin/settings"}>
                 Settings

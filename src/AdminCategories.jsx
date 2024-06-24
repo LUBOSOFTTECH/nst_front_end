@@ -20,7 +20,7 @@ function AdminCategories() {
 
   function handleFocusSubCategoryInput(mainCategoryId) {
     console.log(mainCategoryId);
-    subCategoryInputRef.current.focus();
+    subCategoryInputRef.current?.focus();
   }
   function handleUpdateMainCategory(mainCategoryId) {
     console.log(mainCategoryId);
@@ -119,23 +119,27 @@ function AdminCategories() {
           ) : null}
         </div>
         <div className='grow'>
-          <h4 className='mt-12 text-xl font-medium'>Sub Category</h4>
-          <div className='flex gap-2'>
-            <input
-              ref={subCategoryInputRef}
-              className='p-2 mt-3 border-2 rounded-md min-w-60  w-[80%]'
-              type='text'
-              onChange={(e) => setSubCategoryInput(e.currentTarget.value)}
-              value={subCategoryInput}
-            />
-            <div className='flex flex-col justify-center mt-3'>
-              <IoAddCircle
-                onClick={handleAddSubCategory}
-                size={40}
-                className='cursor-pointer fill-blue-500 hover:fill-blue-600'
-              />
-            </div>
-          </div>
+          {selectedMainCategoryId ? (
+            <>
+              <h4 className='mt-12 text-xl font-medium'>Sub Category</h4>
+              <div className='flex gap-2'>
+                <input
+                  ref={subCategoryInputRef}
+                  className='p-2 mt-3 border-2 rounded-md min-w-60  w-[80%]'
+                  type='text'
+                  onChange={(e) => setSubCategoryInput(e.currentTarget.value)}
+                  value={subCategoryInput}
+                />
+                <div className='flex flex-col justify-center mt-3'>
+                  <IoAddCircle
+                    onClick={handleAddSubCategory}
+                    size={40}
+                    className='cursor-pointer fill-blue-500 hover:fill-blue-600'
+                  />
+                </div>
+              </div>
+            </>
+          ) : null}
           {selectedSubCategories?.length ? (
             <table className='mt-5  w-[100%]'>
               <thead>
